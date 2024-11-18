@@ -4,52 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://i.pinimg.com/736x/e4/f4/3e/e4f43eb10c35a7eac7857ac04705855f.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>receitas</title>
 </head>
 <body>
 
- <header>
-    <div id="cabecalho">
-        <img src="https://i.pinimg.com/736x/e4/f4/3e/e4f43eb10c35a7eac7857ac04705855f.jpg" alt="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="receitas.html">Receitas</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="suareceita.html">Sua receita</a>
-            <a href="cadastros.html">Cadastro</a>
-            <a href="original.html">Original</a>
-        </nav>
-    <div>
- </header>
+    <header>
+        <div id="cabecalho">
+            <img src="https://i.pinimg.com/736x/e4/f4/3e/e4f43eb10c35a7eac7857ac04705855f.jpg" alt="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="receitas.html">Receitas</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="suareceita.html">Sua receita</a>
+                <a class="ativo" href="cadastros.html">Cadastro</a>
+                <a href="original.html">Original</a>
+            </nav>
+        <div>
+    </header>
 
+    <main>
+        <div id="formulario">
+            <div id="pedido">
+                <form method="post" action="#">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome">
+                    <br><br>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="E-mail">
+                </form>
+           <!-- </div>
+           <div id="obrigacao"> -->
+               <h3>
+                   Sua senha deve conter os sequintes critérios:
+                  <br>
+                  . 8 caracteres mínimos
+                  <br>
+                  . 1 digito
+                  <br>
+                  . 1 minúscula
+                  <br>
+                  . 1 maiúscula
+                  <br>
+                  . 1 caracter especial (ex: ! @ #)
+              </h3>
+          <!-- </div> -->
+        </div>
+    </main>
 </body>
-<main>
-    <div id="formulario">
-        <div id="pedido">
-            <form method="post" action="#">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome">
-                <br><br>
-                <label for="email">E-mail</label>
-                <input type="email" id="E-mail">
-            </form>
-       <!-- </div>
-       <div id="obrigacao"> -->
-           <h3>
-               Sua senha deve conter os sequintes critérios:
-              <br>
-              . 8 caracteres mínimos
-              <br>
-              . 1 digito
-              <br>
-              . 1 minúscula
-              <br>
-              . 1 maiúscula
-              <br>
-              . 1 caracter especial (ex: ! @ #)
-          </h3>
-      <!-- </div> -->
-    </div>
-</main>
 </html>
