@@ -19,7 +19,9 @@ header {
 	background-color: var(--cor_secundaria);
 	padding: 10px 0;
 	z-index: 10;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+	border-bottom: 3px solid var(--cor_primaria);
+	box-shadow: 0 3px 82px -46px;
 }
 
 #cabecalho {
@@ -29,15 +31,11 @@ header {
 	align-items: center;
 	justify-content: space-around;
 }
-nav {
+header nav {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	gap: 30px;
-}
-header {
-	border-bottom: 3px solid var(--cor_primaria);
-	box-shadow: 0 3px 82px -46px;
 }
 header a {
 	color: var(--preto_claro);
@@ -57,20 +55,73 @@ header img {
 	width: 100px;
 	border-radius: 50%;
 }
-#galeria {
-	display: flex;
-	justify-content: space-around;
-}
-#galeria .quadrado {
+
+main {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	width: 250px;
-	height: 300px;
-	border: 2px solid var(--preto_claro);
-	border-radius: 10px;
-	padding: 5px;
+	justify-content: space-between;
+	height: 80vh;
+	margin: 50px;
 }
+
+#galeria {
+	display: flex;
+	justify-content: space-evenly;
+}
+#galeria .quadrado img {
+	width: 350px;
+	border-radius: 10px;
+	box-shadow: -1px 4px 38px -16px var(--rosa_escuro);
+	transition: 0.8s;
+}
+#galeria .quadrado img:hover {
+	scale: 1.1;
+	cursor: pointer;
+}
+
+#conteudo_principal {
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+#conteudo_principal p {
+	width: 700px;
+}
+
+footer {
+	width: 100vw;
+	background-color: var(--cor_terciaria);
+	padding: 15px;
+}
+
+#conteudo_footer {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+#conteudo_footer div {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	text-align: center;
+}
+
+#conteudo_footer div > img {
+	width: 250px;
+}
+
+#conteudo_footer div p {
+	float: left;
+	text-align: left;
+	font-size: 14px;
+}
+#conteudo_footer div h3 {
+	color: var(--preto_claro);
+	font-size: 20px;
+}
+
 #cadastro {
 	display: flex;
 	margin: 10px auto;
@@ -90,6 +141,7 @@ header img {
 	--cor_terciaria: #fdafda;
 	--cor_quartenaria: #d8b6f0;
 
+	--rosa_escuro: #3b053b;
 	--cinza: #8b8b8b;
 	--preto_claro: #1b1b1b;
 	--branco: #f7f7f7;
