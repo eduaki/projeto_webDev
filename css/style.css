@@ -89,7 +89,7 @@ main {
 }
 
 footer {
-	width: 100vw;
+	width: 100%;
 	background-color: var(--cor_terciaria);
 	padding: 15px;
 }
