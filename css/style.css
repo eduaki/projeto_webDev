@@ -1,6 +1,8 @@
 /* importação da fonte utilizada no site */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* nesse arquivo somente os estilos gerais que podem ser repetidos no site todo */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -56,38 +58,6 @@ header img {
 	border-radius: 50%;
 }
 
-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 80vh;
-	margin: 50px;
-}
-
-#galeria {
-	display: flex;
-	justify-content: space-evenly;
-}
-#galeria .quadrado img {
-	width: 350px;
-	border-radius: 10px;
-	box-shadow: -1px 4px 38px -16px var(--rosa_escuro);
-	transition: 0.8s;
-}
-#galeria .quadrado img:hover {
-	scale: 1.1;
-	cursor: pointer;
-}
-
-#conteudo_principal {
-	max-width: 1100px;
-	margin: 0 auto;
-	text-align: center;
-}
-#conteudo_principal p {
-	width: 700px;
-}
-
 footer {
 	width: 100%;
 	background-color: var(--cor_terciaria);
@@ -120,19 +90,6 @@ footer {
 #conteudo_footer div h3 {
 	color: var(--preto_claro);
 	font-size: 20px;
-}
-
-#cadastro {
-	display: flex;
-	margin: 10px auto;
-	background-color: var(--cor_terciaria);
-	padding: 20px;
-}
-#pedido {
-	padding: 10px;
-	margin-top: 5px;
-	margin: 0 auto;
-	background-color: var(--cor_quartenaria);
 }
 
 :root {

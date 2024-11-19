@@ -1,0 +1,12 @@
+#cadastro {
+	display: flex;
+	margin: 10px auto;
+	background-color: var(--cor_terciaria);
+	padding: 20px;
+}
+#pedido {
+	padding: 10px;
+	margin-top: 5px;
+	margin: 0 auto;
+	background-color: var(--cor_quartenaria);
+}

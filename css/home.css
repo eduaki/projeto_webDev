@@ -1,0 +1,31 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80vh;
+	margin: 50px;
+}
+
+#galeria {
+	display: flex;
+	justify-content: space-evenly;
+}
+#galeria .quadrado img {
+	width: 350px;
+	border-radius: 10px;
+	box-shadow: -1px 4px 38px -16px var(--rosa_escuro);
+	transition: 0.8s;
+}
+#galeria .quadrado img:hover {
+	scale: 1.1;
+	cursor: pointer;
+}
+
+#conteudo_principal {
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+#conteudo_principal p {
+	width: 700px;
+}
