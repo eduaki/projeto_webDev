@@ -93,4 +93,5 @@ h3 {
 	width: 50%;
 	text-align: left;
 	gap: 20px;
+	transition: 0.5s;
 }

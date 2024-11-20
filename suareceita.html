@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,15 +24,15 @@
     </header>
     <main>
         <section>
-            <h1>nos envie sua receita</h1>
+            <h1>Envie a sua receita pra gente!</h1>
             <h3>faça parte da nossa familia</h3>
 
             <div id="conteudo">
                 <div id="form">
-                    <form>
+                    <form onsubmit="enviarreceita(event)">
                         <div class="inputs">
                             <label for="titulo">Nome da receita</label>
-                            <input required type="text" placeholder="ex: bolo de cenoura com calda de chocolate">
+                            <input id="titulo" required type="text" placeholder="ex: bolo de cenoura com calda de chocolate">
                         </div>
                         <div class="inputs">
                             <label for="ingredientes">quais são os ingredientes?</label>
@@ -53,14 +53,17 @@
                     </form>
                 </div>
 
-                <div id="receitapronta">
+                <div id="receitapronta" style="display: none;">
                     <h1>sua receita ficou assim:</h1>
+
+                    <h2 id="titulo_texto"></h2>
+
                     <h4>Ingredientes: </h4>
                     <p id="ingredientes_texto"></p>
                     <h4>Modo de preparo: </h4>
                     <p id="modopreparo_texto"></p>
 
-                    <button id="button">Confirmar envio</button>
+                    <button onclick="confirma()" id="button">Confirmar envio</button>
                 </div>
 
             </div>
@@ -84,5 +87,6 @@
 			</div>
 		</div>
 	</footer>
+    <script src="./js/suareceita.js"></script>
 </body>
 </html>
