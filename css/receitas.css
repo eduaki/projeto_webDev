@@ -1,11 +1,10 @@
 main {
-	min-height: calc(100vh - 180px);
 	max-width: 1100px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 }
 #conteudo_topo {
-	height: calc(100vh - 180px);
+	min-height: calc(100vh - 180px);
 }
 #conteudo_topo h1 {
 	margin: 30px 0;
@@ -44,7 +43,6 @@ main {
 	border-radius: 10px 10px 0 0;
 }
 .bloco h3 {
-	text-overflow: ellipsis;
 	margin-bottom: 10px;
 }
 
@@ -92,4 +90,24 @@ ul {
 }
 li {
 	list-style: decimal;
+}
+@media (max-width: 750px) {
+	main {
+		max-width: 740px;
+	}
+	.receita {
+		flex-flow: row wrap;
+		gap: 30px;
+		justify-content: center;
+		text-align: left;
+	}
+}
+@media (max-width: 500px) {
+	.receita .descricao {
+		max-width: 300px;
+	}
+	.bloco {
+		width: 250px;
+		padding: 5px;
+	}
 }

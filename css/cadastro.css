@@ -1,5 +1,5 @@
 main {
-	height: calc(100vh - 180px);
+	min-height: calc(100vh - 180px);
 	text-align: center;
 }
 
@@ -19,7 +19,8 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	width: 400px;
+	max-width: 400px;
+	width: 70vw;
 	gap: 5px;
 	margin-bottom: 10px;
 }
@@ -46,12 +47,13 @@ h2 {
 #areadobotao {
 	display: flex;
 	justify-content: center;
-	width: 400px;
+	max-width: 400px;
 }
 
 #button {
 	margin-top: 20px;
-	width: 250px;
+	max-width: 250px;
+	width: 70vw;
 	height: 50px;
 	border-radius: 10px;
 	border: none;

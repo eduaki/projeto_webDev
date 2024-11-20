@@ -28,7 +28,6 @@ html {
 header {
 	background-color: var(--cor_secundaria);
 	padding: 10px 0;
-	z-index: 10;
 	margin-bottom: 50px;
 	border-bottom: 3px solid var(--cor_primaria);
 	box-shadow: 0 3px 82px -46px;
@@ -77,6 +76,8 @@ footer {
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
 	justify-content: space-between;
 }
 #conteudo_footer div {
@@ -110,4 +111,29 @@ footer {
 	--cinza: #8b8b8b;
 	--preto_claro: #1b1b1b;
 	--branco: #f7f7f7;
+}
+
+@media (max-width: 900px) {
+	#cabecalho {
+		max-width: 900px;
+	}
+	header nav {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 750px) {
+	#cabecalho {
+		max-width: 750px;
+		flex-flow: row wrap;
+		gap: 20px;
+	}
+	header nav {
+		gap: 5px;
+		flex-flow: row wrap;
+	}
+
+	#conteudo_footer {
+		justify-content: center;
+	}
 }

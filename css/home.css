@@ -2,13 +2,14 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 80vh;
+	min-height: 80vh;
 	margin: 50px;
 }
 
 #galeria {
 	display: flex;
 	justify-content: space-evenly;
+	flex-flow: row wrap;
 }
 #galeria .quadrado img {
 	width: 350px;
@@ -28,4 +29,19 @@ main {
 }
 #conteudo_principal p {
 	width: 700px;
+}
+@media (max-width: 850px) {
+	#conteudo_principal,
+	#galeria {
+		max-width: 860px;
+		gap: 20px;
+	}
+	#galeria .quadrado img {
+		width: 250px;
+	}
+
+	#conteudo_principal p {
+		max-width: 80vw;
+		margin: 20px 0;
+	}
 }
