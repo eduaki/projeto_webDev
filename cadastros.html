@@ -29,7 +29,7 @@
         <h2>fique por dentro das melhores receitas</h2>
         <section id="cadastro">
             <div>
-                <form method="post" action="#">
+                <form>
                     <div class="inputs">
                         <label for="nome">Nome completo:</label>
                         <input type="text" id="nome">
@@ -42,23 +42,24 @@
                         <label for="senha">Senha</label>
                         <input type="password" id="senha">
                     </div>
+                    <h4>Sua senha deve conter:</h4>
+                    <span>
+                        <li>No mínimo 8 caracteres</li>
+                        <li>Caracteres númericos</li>
+                        <li>Letras minúsculas e maiúscula</li>
+                        <li>Caracteres especiais (ex: ! @ #)</li>
+                    </span>
+                    
+                    <div id="checkboxarea">
+                        <input required type="checkbox" id="checkbox">
+                        <label for="checkbox">li e aceito os <i><a href="./privacidade.txt" target="_blank">termos de privacidade</a></i>.</label>
+                    </div>
+
+                    <div id="areadobotao">
+                        <input id="button" type="submit">
+                    </div>
                 </form>
-                <h4>Sua senha deve conter:</h4>
-                <span>
-                    <li>No mínimo 8 caracteres</li>
-                    <li>Caracteres númericos</li>
-                    <li>Letras minúsculas e maiúscula</li>
-                    <li>Caracteres especiais (ex: ! @ #)</li>
-                </span>
-
-                <div id="checkbox">
-                    <input type="checkbox">
-                    <p>li e aceito os <i><a href="#">termos de privacidade</a></i>.</p>
-                </div>
             </div>
-
-            <button>Cadastrar</button>
-
         </section>
     </main>
 

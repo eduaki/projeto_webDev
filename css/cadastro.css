@@ -30,19 +30,26 @@ h2 {
 	border: 2px solid var(--cor_quartenaria);
 }
 
-#checkbox {
+#checkboxarea {
 	display: flex;
 	gap: 10px;
 	margin-top: 10px;
 }
-#checkbox a {
+#checkboxarea a {
 	color: blue;
 	text-decoration: underline;
 }
-#checkbox a:hover {
+#checkboxarea a:hover {
 	color: blueviolet;
 }
-button {
+
+#areadobotao {
+	display: flex;
+	justify-content: center;
+	width: 400px;
+}
+
+#button {
 	margin-top: 20px;
 	width: 250px;
 	height: 50px;
@@ -53,7 +60,7 @@ button {
 	cursor: pointer;
 	transition: 0.5s;
 }
-button:hover {
+#button:hover {
 	background-color: var(--cor_quartenaria);
 	scale: 0.98;
 }
