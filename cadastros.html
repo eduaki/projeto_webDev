@@ -25,31 +25,40 @@
     </header>
 
     <main>
-        <section>
-            <div id="cadastro">
-                <div id="pedido">
-                    <form method="post" action="#">
+        <h1>Crie agora o seu cadastro</h1>
+        <h2>fique por dentro das melhores receitas</h2>
+        <section id="cadastro">
+            <div>
+                <form method="post" action="#">
+                    <div class="inputs">
                         <label for="nome">Nome completo:</label>
                         <input type="text" id="nome">
-                        <br><br>
+                    </div>
+                    <div class="inputs">
                         <label for="email">E-mail</label>
-                        <input type="email" id="E-mail">
-                    </form>
-                    <h3>
-                    Sua senha deve conter os sequintes critérios:
-                    <br>
-                    . 8 caracteres mínimos
-                    <br>
-                    . 1 digito
-                    <br>
-                    . 1 minúscula
-                    <br>
-                    . 1 maiúscula
-                    <br>
-                    . 1 caracter especial (ex: ! @ #)
-                    </h3>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="inputs">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha">
+                    </div>
+                </form>
+                <h4>Sua senha deve conter:</h4>
+                <span>
+                    <li>No mínimo 8 caracteres</li>
+                    <li>Caracteres númericos</li>
+                    <li>Letras minúsculas e maiúscula</li>
+                    <li>Caracteres especiais (ex: ! @ #)</li>
+                </span>
+
+                <div id="checkbox">
+                    <input type="checkbox">
+                    <p>li e aceito os <i><a href="#">termos de privacidade</a></i>.</p>
                 </div>
             </div>
+
+            <button>Cadastrar</button>
+
         </section>
     </main>
 
