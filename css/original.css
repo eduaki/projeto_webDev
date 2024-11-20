@@ -1,0 +1,29 @@
+main {
+	height: calc(100vh - 180px);
+	max-width: 1100px;
+	margin: 0 auto;
+}
+ul {
+	margin-top: 50px;
+}
+li {
+	list-style: decimal;
+}
+a {
+	color: blue;
+}
+a:hover {
+	color: blueviolet;
+}
+
+h1 {
+	text-align: center;
+}
+
+#texto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80%;
+	width: 100%;
+}
