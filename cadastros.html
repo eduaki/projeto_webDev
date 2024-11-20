@@ -29,18 +29,18 @@
         <h2>fique por dentro das melhores receitas</h2>
         <section id="cadastro">
             <div>
-                <form>
+                <form onsubmit="criarCadastro()">
                     <div class="inputs">
                         <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome">
+                        <input required type="text" id="nome">
                     </div>
                     <div class="inputs">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email">
+                        <input required type="email" id="email">
                     </div>
                     <div class="inputs">
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha">
+                        <input required type="password" id="senha">
                     </div>
                     <h4>Sua senha deve conter:</h4>
                     <span>
@@ -81,5 +81,6 @@
 			</div>
 		</div>
 	</footer>
+    <script src="./js/cadastro.js"></script>
 </body>
 </html>
