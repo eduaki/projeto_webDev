@@ -1,0 +1,95 @@
+main {
+	min-height: calc(100vh - 180px);
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+#conteudo_topo {
+	height: calc(100vh - 180px);
+}
+#conteudo_topo h1 {
+	margin: 30px 0;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 100px;
+}
+#conteudo_topo #botoes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-flow: row wrap;
+	gap: 50px;
+}
+.bloco {
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: -1px 4px 38px -16px var(--rosa_escuro);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 15px;
+
+	width: 350px;
+	height: 300px;
+
+	text-align: center;
+	transition: 0.5s;
+}
+.bloco:hover {
+	scale: 1.02;
+}
+.bloco img {
+	max-width: 350px;
+	border-radius: 10px 10px 0 0;
+}
+.bloco h3 {
+	text-overflow: ellipsis;
+	margin-bottom: 10px;
+}
+
+.receita {
+	max-width: 1100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.receita .descricao {
+	max-width: 500px;
+}
+.receita h2 {
+	margin-bottom: 20px;
+}
+
+.descricao h3,
+h4,
+ul {
+	margin-bottom: 10px;
+}
+.descricao ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.video {
+	width: 300px;
+	height: 168px;
+	border-radius: 5px;
+	border: 3px solid var(--cor_terciaria);
+}
+
+.separador {
+	height: 3px;
+	width: 100%;
+
+	border-bottom: 1px dashed var(--cinza);
+	margin: 20px 0;
+}
+
+.ingredientes li {
+	list-style: disc;
+}
+li {
+	list-style: decimal;
+}

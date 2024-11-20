@@ -10,6 +10,14 @@
 
 	font-family: "Roboto", sans-serif;
 }
+a {
+	text-decoration: none;
+	color: var(--preto_claro);
+}
+
+html {
+	scroll-behavior: smooth;
+}
 
 .ativo {
 	background-color: var(--cor_primaria);
