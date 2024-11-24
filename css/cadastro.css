@@ -48,6 +48,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	max-width: 400px;
+	margin-bottom: 50px;
 }
 
 #button {

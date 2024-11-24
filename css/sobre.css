@@ -17,15 +17,15 @@ main {
 	width: 80vw;
 }
 #conteudo_baixo {
-	margin-top: 40px;
 	display: flex;
 	gap: 30px;
 	justify-content: center;
 	flex-flow: row wrap;
-	margin-bottom: 30px;
+	/* margin-top: 40px; */
+	margin-bottom: 30px
 }
 #conteudo_baixo img {
-	max-width: 420px;
+	max-width: 320px;
 	border-radius: 10px;
 	box-shadow: -1px 4px 38px -16px var(--rosa_escuro);
 }

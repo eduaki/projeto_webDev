@@ -1,3 +1,20 @@
+if(document.getElementById("checkbox").checked == false){
+	document.getElementById("button").disabled = true
+	document.getElementById("button").style = "background: gray;"
+}else if(document.getElementById("checkbox").checked == true){
+	document.getElementById("button").style = "background: #fdafda;"
+}
+
+document.getElementById("checkbox").addEventListener("change", () => {
+	if(document.getElementById("checkbox").checked == false){
+		document.getElementById("button").disabled = true
+		document.getElementById("button").style = "background: gray"
+	}else if(document.getElementById("checkbox").checked == true){
+		document.getElementById("button").style = "background: #fdafda;"
+		document.getElementById("button").disabled = false
+	}
+})
+
 function enviarreceita(event) {
 	event.preventDefault();
 	let titulo = document.getElementById("titulo").value;
